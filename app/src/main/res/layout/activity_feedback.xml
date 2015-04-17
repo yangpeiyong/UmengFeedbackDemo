@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ListView
+        android:id="@+id/feedbacklistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/region_bottom"
+        android:divider="@null">
+    </ListView>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/region_bottom"
+        android:background="#f1f1f1" />
+    <RelativeLayout
+        android:id="@+id/region_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp">
+        <EditText
+            android:id="@+id/umeng_fb_send_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/fd_send"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:focusable="true"
+            android:hint="@string/feedback"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="@dimen/umeng_fb_item_content_size" />
+        <ImageButton
+            android:id="@+id/fd_send"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@android:drawable/ic_menu_send" />
+    </RelativeLayout>
+</RelativeLayout>

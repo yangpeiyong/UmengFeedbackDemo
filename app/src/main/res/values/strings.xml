@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">用户反馈Demo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="feedback">意见反馈</string>
+    <string name="reply_no_empty">反馈内容不能为空</string>
+    <string name="comment_count">评论(%d)</string>
+    <string name="hour_before">%d小时前</string>
+    <string name="minute_before">%d分钟前</string>
+    <string name="second_before">%d秒前</string>
+    <string name="fb_reply_content_default">你好， 我是[程序员]，欢迎您反馈使用[APP]的感受和建议</string>
+    <string name="current">刚刚</string>
+</resources>

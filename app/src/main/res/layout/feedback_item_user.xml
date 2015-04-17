@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/umeng_fb_reply_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/material_blueGrey_300"
+        android:textSize="@dimen/umeng_fb_item_time_size"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/feedback_avatar"
+        android:layout_below="@id/umeng_fb_reply_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/head_user"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+    <TextView
+        android:id="@+id/umeng_fb_reply_content"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_height="wrap_content"
+        android:text="hhhh"
+        android:layout_alignTop="@id/feedback_avatar"
+        android:layout_toLeftOf="@id/feedback_avatar"
+        android:background="@mipmap/feedback_user_reply_background"
+        android:textColor="@color/black"
+        android:textSize="@dimen/umeng_fb_item_content_size" />
+</RelativeLayout>
